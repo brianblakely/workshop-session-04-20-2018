@@ -45,10 +45,19 @@ const pagination = combineReducers({
   })
 })
 
+const demoData = (state = {
+  title: `This is my title`,
+  src: `https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png`,
+  alt: `The Google Logo`
+}, action) => {
+  return state
+}
+
 const rootReducer = combineReducers({
   entities,
   pagination,
   errorMessage,
+  demoData
 })
 
 export default rootReducer
