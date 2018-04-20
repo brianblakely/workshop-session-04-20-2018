@@ -6,10 +6,8 @@
   "private": true,
   "scripts": {
     "test": "npm run test-local",
-    "test-cloud": "E2E_ENV=cloud mocha -t 30000 test/e2e.js",
     "test-local": "E2E_ENV=local mocha -t 30000 test/e2e.js"
   },
-  "author": "Tsutomu Kawamura",
   "license": "MIT",
   "devDependencies": {
     "mocha": "^3.0.0",
