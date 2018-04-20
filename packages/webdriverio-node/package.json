@@ -1,0 +1,13 @@
+{
+  "name": "webdriverio-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "webdriverio": "^4.12.0"
+  }
+}
