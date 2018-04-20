@@ -3,13 +3,14 @@ const assert = require('assert')
 
 module.exports = () => {
 
-  describe('First Test Group', () => {
-    it('gets the title of MDN toppage', () => {
+  describe('First Task', () => {
+    it('takes a screenshot of a subpage', () => {
       return browser
-        .url('https://developer.mozilla.org/en-US/')
-        .getTitle().then(title => {
-           assert.equal(title, 'Mozilla Developer Network')
-        })
+        .url(`https://www.chase.com/`)
+        .waitForExist(`.carousel--custom-pager__item-inner[href*="slide1"]`, 20000)
+        .click(`.carousel--custom-pager__item-inner[href*="slide1"]`)
+        .waitForExist(`.ZipGateHeader`)
+        .screenshot();
     })
   })
 

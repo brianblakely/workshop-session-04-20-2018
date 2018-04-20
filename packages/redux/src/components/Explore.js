@@ -2,6 +2,9 @@
 
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import Header from './Header.js'
+import Title from './Title.js'
+import Image from './Image.js'
 
 const GITHUB_REPO = 'https://github.com/reactjs/redux'
 
@@ -41,6 +44,13 @@ export default class Explore extends Component {
   render() {
     return (
       <div>
+        <Header>
+          <Title text="This is my title" />
+          <Image
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt="The Google Logo"
+          />
+        </Header>
         <p>Type a username or repo full name and hit 'Go':</p>
         <input size="45"
                ref={(input) => this.input = input}
